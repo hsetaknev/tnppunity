@@ -1,0 +1,527 @@
+{
+  "settings": {
+    "name": "Site-07-29_1558",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.8.1",
+    "siteFonts": [],
+    "uniqCompNum": 6,
+    "versionPublish": "4.8.1",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "H2": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content5",
+          "_customHTML": "<section class=\"mbr-section content5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\" parallax selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"title col-12 col-md-8\">\n                <h2 mbr-if=\"showTitle\" class=\"align-center mbr-bold mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\">&nbsp;தமிழக மக்கள் ஒற்றுமை மேடை&nbsp;</h2>\n                <h3 mbr-if=\"showSubtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-section-subtitle\">Tamil Nadu Platform for People's Unity</h3>\n                <p class=\"mbr-text align-center mbr-white pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-if=\"showText\" mbr-article data-multiline></p>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n                    <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qZbBjRdEoe",
+          "_anchor": "content5-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            ".modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".modal-body .close span": {
+              "font-style": "normal"
+            },
+            ".carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev": {
+              "display": "table"
+            },
+            ".carousel-control .icon-next, .carousel-control .icon-prev": {
+              "margin-top": "-18px",
+              "font-size": "40px",
+              "line-height": "27px"
+            },
+            ".carousel-control:hover": {
+              "background": "#1b1b1b",
+              "color": "#fff",
+              "opacity": "1"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              }
+            },
+            ".boxed-slider": {
+              "position": "relative",
+              "padding": "93px 0"
+            },
+            ".boxed-slider > div": {
+              "position": "relative"
+            },
+            ".container img": {
+              "width": "100%"
+            },
+            ".container img + .row": {
+              "position": "absolute",
+              "top": "50%",
+              "left": "0",
+              "right": "0",
+              "-webkit-transform": "translateY(-50%)",
+              "-moz-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)",
+              "z-index": "2"
+            },
+            ".mbr-section": {
+              "padding": "0",
+              "background-attachment": "scroll"
+            },
+            ".mbr-table-cell": {
+              "padding": "0"
+            },
+            ".container .carousel-indicators": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "flex",
+              "align-items": "center",
+              "-webkit-transform": "translateY(-50%)",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-overlay": {
+              "z-index": "1"
+            },
+            ".container-slide.container": {
+              "min-width": "100%",
+              "min-height": "100vh",
+              "padding": "0"
+            },
+            ".carousel-item": {
+              "background-position": "50% 50%",
+              "background-repeat": "no-repeat",
+              "background-size": "cover",
+              "-o-transition": "-o-transform 0.6s ease-in-out",
+              "-webkit-transition": "-webkit-transform 0.6s ease-in-out",
+              "transition": "transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out, -o-transform 0.6s ease-in-out",
+              "-webkit-backface-visibility": "hidden",
+              "backface-visibility": "hidden",
+              "-webkit-perspective": "1000px",
+              "perspective": "1000px",
+              ".container": {
+                "@media (max-width: 576px)": {
+                  "width": "100%"
+                }
+              }
+            },
+            ".carousel-item-next.carousel-item-left, .carousel-item-prev.carousel-item-right": {
+              "-webkit-transform": "translate3d(0, 0, 0)",
+              "transform": "translate3d(0, 0, 0)"
+            },
+            ".active.carousel-item-right, .carousel-item-next": {
+              "-webkit-transform": "translate3d(100%, 0, 0)",
+              "transform": "translate3d(100%, 0, 0)"
+            },
+            ".active.carousel-item-left, .carousel-item-prev": {
+              "-webkit-transform": "translate3d(-100%, 0, 0)",
+              "transform": "translate3d(-100%, 0, 0)"
+            },
+            ".mbr-slider": {
+              ".carousel-control": {
+                "top": "50%",
+                "width": "70px",
+                "height": "70px",
+                "margin-top": "-1.5rem",
+                "font-size": "35px",
+                "background-color": "rgba(0, 0, 0, 0.5)",
+                "border": "2px solid #fff",
+                "border-radius": "50%",
+                "transition": "all .3s",
+                "&.carousel-control-prev": {
+                  "left": "0",
+                  "margin-left": "2.5rem"
+                },
+                "&.carousel-control-next": {
+                  "right": "0",
+                  "margin-right": "2.5rem"
+                },
+                ".mbr-iconfont": {
+                  "font-size": "2rem"
+                },
+                "@media (max-width: 767px)": {
+                  "top": "auto",
+                  "bottom": "1rem"
+                }
+              },
+              ".carousel-indicators": {
+                "position": "absolute",
+                "bottom": "0",
+                "margin-bottom": "1.5rem !important",
+                "li": {
+                  "max-width": "20px",
+                  "width": "20px",
+                  "height": "20px",
+                  "max-height": "20px",
+                  "margin": "3px",
+                  "background-color": "rgba(0, 0, 0, 0.5)",
+                  "border": "2px solid #fff",
+                  "border-radius": "50%",
+                  "opacity": ".5",
+                  "transition": "all .3s",
+                  "&.active, &:hover": {
+                    "opacity": ".9"
+                  },
+                  "&::after, &::before": {
+                    "content": "none"
+                  }
+                },
+                "&.ie-fix": {
+                  "left": "50%",
+                  "display": "block",
+                  "width": "60%",
+                  "margin-left": "-30%",
+                  "text-align": "center"
+                },
+                "@media (max-width: 576px)": {
+                  "display": "none !important"
+                }
+              },
+              "> .container": {
+                "img": {
+                  "width": "100%",
+                  "+ .row": {
+                    "position": "absolute",
+                    "top": "50%",
+                    "right": "0",
+                    "left": "0",
+                    "z-index": "2",
+                    "-moz-transform": "translateY(-50%)",
+                    "-webkit-transform": "translateY(-50%)",
+                    "transform": "translateY(-50%)"
+                  }
+                },
+                ".carousel-indicators": {
+                  "margin-bottom": "3px"
+                },
+                "@media (max-width: 576px)": {
+                  ".carousel-control": {
+                    "margin-bottom": "0"
+                  }
+                }
+              },
+              ".mbr-section": {
+                "padding": "0",
+                "background-attachment": "scroll"
+              },
+              ".mbr-table-cell": {
+                "padding": "0"
+              }
+            },
+            ".carousel-item .container.container-slide": {
+              "position": "initial",
+              "width": "auto",
+              "min-height": "0"
+            },
+            ".full-screen": {
+              ".slider-fullscreen-image": {
+                "min-height": "100vh",
+                "background-repeat": "no-repeat",
+                "background-position": "50% 50%",
+                "background-size": "cover",
+                "&.active": {
+                  "display": "-o-flex"
+                }
+              },
+              "& .container": {
+                "width": "auto",
+                "padding-right": "0",
+                "padding-left": "0"
+              },
+              ".carousel-item .container.container-slide": {
+                "width": "100%",
+                "min-height": "100vh",
+                "padding": "0",
+                "& img": {
+                  "display": "none"
+                }
+              }
+            },
+            ".mbr-background-video-preview": {
+              "position": "absolute",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0"
+            },
+            ".mbr-overlay ~ .container-slide": {
+              "z-index": "auto"
+            }
+          },
+          "_name": "slider1",
+          "_customHTML": "<section class=\"carousel slide\" group=\"Sliders & Gallery\" plugins=\"YTPlayer,VimeoPlayer,SliderVideo,BootstrapCarouselSwipe\" data-interval=\"false\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"carousel\" title=\"Slides\" name=\"slides\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-carousel=\"slides\" class=\"full-screen\" mbr-carousel-embedded></div>\n\n</section>",
+          "_cid": "qZbxRofBBV",
+          "_anchor": "slider1-3",
+          "_protectedParams": [
+            "slides__autoplay",
+            "slides__autoplayInterval",
+            "slides__showBullets",
+            "slides"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "slides__autoplay": true,
+            "slides__autoplayInterval": 4000,
+            "slides__showBullets": false,
+            "slides": [
+              {
+                "image": "@PROJECT_PATH@/assets/images/1-1007x505.png",
+                "active": true,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "",
+                "overlay": false,
+                "contentAlign": "center",
+                "text": "",
+                "buttons": " <a data-app-btn=\"true\" class=\"btn  btn-white-outline display-4\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\" data-toolbar=\"-mbrBtnMove\">FOR MAC</a>"
+              },
+              {
+                "image": "@PROJECT_PATH@/assets/images/2-1007x507.png",
+                "active": false,
+                "showButtons": false,
+                "showText": false,
+                "showTitle": false,
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "customStyle1": "display-1",
+                "customStyle2": "display-5",
+                "customStyle3": "display-4",
+                "title": "",
+                "overlay": false,
+                "contentAlign": "left",
+                "text": "",
+                "buttons": "<a data-app-btn=\"true\" class=\"btn btn-primary\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"btn  btn-white-outline\" data-app-placeholder=\"Type Text\" href=\"https://mobirise.com\">FOR MAC</a>"
+              }
+            ]
+          }
+        },
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-figure": {
+              "margin": "0 auto",
+              "width": "100%",
+              "display": "flex",
+              "justify-content": "center",
+              "img": {
+                "height": "100%",
+                "margin": "0 auto"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure": {
+                "img": {
+                  "width": "100% !important"
+                }
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "left",
+              "color": "#ffffff"
+            },
+            "H1": {
+              "color": "#232323"
+            }
+          },
+          "_name": "header4",
+          "_customHTML": "<section class=\"header4\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"range\" inline title=\"Media Size\" name=\"mediaSize\" min=\"10\" max=\"100\" step=\"5\" value=\"55\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1920x1440.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#0f7699\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"media-content col-md-10\">\n                <h1 class=\"mbr-section-title align-center mbr-white pb-3 mbr-bold mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\">&nbsp;தமிழக மக்கள் ஒற்றுமை மேடை - ஓர் அறிமுகம்</h1>\n                <h3 class=\"mbr-section-subtitle align-center mbr-white mbr-light pb-3 mbr-fonts-style\" mbr-if=\"showSubTitle\" mbr-theme-style=\"display-2\">\n                    Beautiful mobile websites\n                </h3>\n                <div class=\"mbr-text align-center mbr-white pb-3\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text, .mbr-section-btn\">பிரிட்டிஷ் காலனிய ஆதிக்கவாதிகள் கட்டவிழ்த்துவிட்ட அடக்குமுறைகளை, சித்திரவதைகளை எதிர்கொண்டே இந்திய மக்கள்  மதம், இனம், மொழி போன்ற பல்வேறு வேறுபாடுகளையும் கடந்து தங்களை ஒன்றுபடுத்திக் கொண்டு,  காலனியாதிக்கத்திற்கு எதிராக மிக நீண்ட, மிகக் கடுமையான  போராட்டத்தை  நடத்தினர்.  மதச்சார்பற்ற அரசு என்பது நமது வரலாற்றுச் சிறப்புமிக்க சுதந்திரப் போராட்டத்தின் ஒரு முக்கிய குறிக்கோளாக இருந்தது.<br><br>\nஎனவேதான் 1950ஆம் ஆண்டு ஜனவரி 26 அன்று நமது நாடு ஒரு குடியரசாக மாறியபோது நமக்கு நாமே வழங்கிக் கொண்ட அரசியல் அமைப்புச் சட்டமானது மதச்சார்பற்ற அரசை தன்னுள் ஆழமாகவும். உறுதியாகவும் பதித்துக் கொண்டது.  1994ஆம் ஆண்டு ஒன்பது நீதிபதிகளைக் கொண்ட அரசியல் அமைப்புச்சட்ட அமர்வு பொம்மை வழக்கில் வழங்கிய தீர்ப்பில், மதச்சார்பற்ற அரசு என்பது நமது அரசியல் அமைப்புச் சட்டத்தின் பிரிக்கமுடியாத அடிப்படைக் கட்டமைப்பாக விளங்குகிறது என ஒருமித்த குரலில் உறுதிப்படுத்தியது.<br></p>\n                </div>\n                <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">LEARN MORE</a></div>\n            </div>\n            <div class=\"mbr-figure pt-5\">\n                <img src=\"@PROJECT_PATH@/assets/images/22050023-290287828138619-4744563556600475285-n-570x425.jpg\" alt=\"Mobirise\" mbr-style=\"{'width': mediaSize + '%'}\" title>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qZbuM0v0IT",
+          "_anchor": "header4-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-subtitle": {
+              "letter-spacing": ".2rem"
+            },
+            "H1": {
+              "text-align": "left"
+            },
+            "SPAN": {
+              "color": "#232323"
+            },
+            "DIV": {
+              "color": "#232323",
+              "text-align": "left"
+            }
+          },
+          "_name": "header10",
+          "_customHTML": "<section class=\"header10\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\" checked>\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#c1bbbd\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-column mbr-white col-lg-8 col-md-10 ml-auto\">\n            <h1 class=\"mbr-section-title align-right mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\"><span style=\"font-weight: normal;\">சுதந்திர இந்தியா இப்போது 70 ஆண்டுகளைக் கடந்து வந்துள்ளது. இந்த 70 ஆண்டு காலத்தில், இந்தியாவில் மதச்சார்பற்ற அரசுக்கு எதிராக பல அச்சுறுத்தல்கள் உருவானபோதிலும், இன்றும் அவை தொடர்கின்ற போதிலும், பெருமளவிற்கு அந்த தன்மையை தக்க வைத்து வருகிறது.&nbsp;\n\n</span><br><span style=\"font-weight: normal;\"><br></span><div><span style=\"font-weight: normal;\">விடுதலைப் போராட்டப் பாரம்பரியத்திலிருந்து நாம் பெற்றிருந்த மதசார்பற்ற, ஜனநாயகக் குடியரசு என்ற பார்வைக்கு முற்றிலும் முரணான வகையில், பெரும்பான்மை வகுப்புவாத அடிப்படையில், மற்ற அடையாளங்கள் அனைத்தையும் ஒதுக்கி வைத்துவிட்டு இந்தியக் குடிமகனின் மதரீதியான அடையாளத்திற்கு மட்டுமே முன்னுரிமை அளிக்கின்ற ஒரு கருத்தும் அரசியல் உலகில் ஒரு பிரிவினரிடையே இருந்து வந்தது. இந்த அரசியல் பிரிவு நாட்டு விடுதலைக்குப் பிறகு பல ஆண்டுகளுக்கு நாட்டின் அரசியலில் மிகச் சிறியதொரு பிரிவாகவே தொடர்ந்து நீடித்து வந்தது. நாட்டின் விடுதலைப் போராட்டத்திலிருந்து கிட்டத்தட்ட அது விலகியே நின்றிருந்ததும் அதற்கு ஒரு காரணமாகும். எனினும் சமீப ஆண்டுகளில் இந்த அரசியல் பிரிவு வலுப்பெற்றுள்ளது. அரசியல் அமைப்புச்சட்டத்தில் குறிப்பிடப்பட்டுள்ளதைப் போல, இந்தியாவின் உச்சநீதிமன்றம் வலியுறுத்திக் கூறியுள்ளதைப் போல, இந்திய அரசு மதச்சார்பற்றது என்ற கருத்தை இந்தப் பிரிவு ஏற்றுக் கொள்வதில்லை; மாறாக, இதர மத நம்பிக்கை கொண்டவர்களை, மத நம்பிக்கையேதும் இல்லாதவர்களை எல்லாம் விலக்கி, ஒதுக்கி வைத்து விட்டு பெரும்பான்மை மதரீதியான, வகுப்புவாத அடையாளத்தைக் கொண்ட ‘இந்து ராஷ்ட்டிரா’ என்ற கருத்தோட்டத்தையே அது முன்வைக்கிறது.&nbsp;</span></div><br><div><span style=\"font-weight: normal;\">சிறுபான்மையாக உள்ள மதப்பிரிவினர் மீதும், குறிப்பாக முஸ்லீம்கள் மீதும், தலித்துகள் மீதும் பசு பாதுகாப்பு என்ற பெயரில் நடத்தப்பட்டு வரும் மோசமான தாக்குதல்கள் இந்த நடைமுறைக்கான சாட்சிகளாக விளங்குகின்றன. மத்திய அரசிலும், பல மாநிலங்களிலும் ஆட்சிப் பொறுப்பில் உள்ள பிஜேபி தலைமையிலான அரசுகளின் அக்கறையற்ற அல்லது அதைவிட மோசமான அணுகுமுறையின் விளைவாக, சிறுபான்மையினருக்கும் தலித்துகளுக்கும் எதிராக, இந்து ராஷ்ட்டிரா என்ற கருத்தோட்டத்தை, குறிப்பாக அவர்களது ‘தேசியவாதம்’ என்ற  வகுப்புவாதப் பார்வையை, ஏற்காதவர்களுக்கு எதிராக, அதிகமான அளவில் தாக்குதல்களை மேற்கொள்ள வகுப்புவாத சக்திகளுக்கு துணிவை ஏற்படுத்தியுள்ளது. நாடு முழுவதிலும் உள்ள பல உயர்கல்வி வளாகங்களில் மாணவர்கள், ஆசிரியர்கள் மீதும், இதர பகுதியினர்மீதும் நடத்தப்பட்டுவரும் தாக்குதல்களே இதற்கு சாட்சிகளாகும்.\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">&nbsp;</span></div><div><span style=\"font-weight: normal;\">பெருமளவில் நவீன சிந்தனை கொண்டதாக, மதச்சார்பற்றதொரு மாநிலமாக விளங்கும் தமிழ்நாட்டிலும் கூட, சங் பரிவாரின் பல்வேறு அமைப்புகளும் தமிழ்நாட்டை வகுப்புவாதத்தில் மூழ்கடிக்கத் தீவிரமாகச் செயல்பட்டு வருகின்றன. இந்த மாநிலத்தின் பாரம்பரியமான சமூக சீர்திருத்த இயக்கங்களே இத்தகைய வகுப்புவாத வெறி முயற்சிகளைத் தடுக்கப் போதுமானவை என்று கருதிக் கொள்வது தவறான ஒன்றாகும்.\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">அனைத்து வகையான வகுப்புவாதத்திற்கு  எதிராகவும், அவை வளர்த்தெடுக்கும் வெறுப்பு அரசியலுக்கு எதிராகவும்,  நமது ஜனநாயகத்தின் மதசார்பற்ற, ஜனநாயகத் தன்மையை உயர்த்திப் பிடிக்கும் வகையிலும் இந்திய மக்களின் விரிவான ஒற்றுமையை வளர்த்தெடுப்பது இன்றைய அத்தியாவசியமான கடமையாகும்.\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">எனவே, சமூகத்தின் அனைத்துப் பிரிவுகளையும் சேர்ந்த தொழிலாளர்கள், விவசாயிகள், அறிவார்ந்த நபர்கள், கலைஞர்கள், எழுத்தாளர்கள், அறிவியல் நிபுணர்கள், வர்த்தகர்கள், சமூகத்தின் பிரபலமான நபர்கள், இது குறித்து கவனமுள்ள குடிமக்கள் ஆகியோரை உள்ளடக்கிய அடித்தள அமைப்புகள், பிரிவுகள் ஆகியவர்களை ஒன்றிணைக்கும் வகையில் விரிவானதொரு மதசார்பற்ற மேடை இப்போது உருவாக்கப்பட்டுள்ளது. இந்த மேடையானது பல்வேறு மதநம்பிக்கைகளைக் கொண்டவர்கள், அத்தகைய நம்பிக்கை எதுவும் இல்லாதவர்கள் ஆகியோரில் மதச்சார்பற்ற அரசில் நம்பிக்கைகொண்ட அனைவரையும் உள்ளடக்கிய ஓர் அமைப்பு ஆகும்.\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">இத்தகைய விரிவான மதசார்பற்ற மேடையானது அனைத்து வகுப்புவாத, மத அடிப்படைவாத அமைப்புகள்,சக்திகள் ஆகியவற்றின் அபாயகரமான, பிளவுவாத நடவடிக்கைகளை எதிர்த்து திறமையுடன் செயல்படுவதை நோக்கமாகக் கொண்டதாகும். மத நல்லிணக்கத்திற்கான அச்சுறுத்தல் என்பது பெரும்பான்மை வாதத்திலிருந்தே வருகிறது என்பதை நாம் அங்கீகரிக்கும் அதே நேரத்தில், சிறுபான்மையினரின் வகுப்புவாதத்திற்கு எதிராகப் போராடுவதிலும் அது உறுதியோடு உள்ளது.\n</span></div><div><span style=\"font-weight: normal;\">\n</span></div><div><span style=\"font-weight: normal;\">பெரும்பான்மை அல்லது சிறுபான்மை என்ற பெயரில் பிரச்சாரம் செய்யப்படுகின்ற, செயல்படுத்தப்படுகின்ற வகுப்புவாதம், பழமைவாதம் ஆகியவை ஒன்றையொன்று வளர்ப்பதாகவே உள்ளன என்பதையே நமது வரலாற்று அனுவங்கள் எடுத்துக்</span></div></h1>\n            <h3 class=\"mbr-section-subtitle align-right mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubTitle\">\n<div><br></div></h3>\n            <p class=\"mbr-text align-right pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n            <div class=\"mbr-section-btn align-right\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Text\">LEARN MORE</a></div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "qZbv6ULaMq",
+          "_anchor": "header10-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".content": {
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "> div:not(:last-child)": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            ".media-wrap": {
+              "@media (max-width: 767px)": {
+                "margin-bottom": "1rem"
+              },
+              ".mbr-iconfont-logo": {
+                "font-size": "7.5rem",
+                "color": "#f36"
+              },
+              "img": {
+                "height": "6rem"
+              }
+            },
+            ".footer-lower": {
+              ".copyright": {
+                "@media (max-width: 767px)": {
+                  "margin-bottom": "1rem",
+                  "text-align": "center"
+                }
+              },
+              "hr": {
+                "margin": "1rem 0",
+                "border-color": "#fff",
+                "opacity": ".05"
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                "-webkit-justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.3rem",
+                  "color": "#fff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "-webkit-transition": ".2s linear",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "justify-content": "center",
+                  "-webkit-justify-content": "center"
+                }
+              }
+            }
+          },
+          "_name": "footer1",
+          "_customHTML": "<section group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->  \n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showCopyright\" checked>\n        <select title=\"Icons\" name=\"iconsCount\">\n            <option value=\"0\">0</option>\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/jumbotron.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#3C3C3C\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row content text-white\">\n            <div class=\"col-12 col-md-3\">\n                <div class=\"media-wrap\">\n                    <a href=\"https://mobirise.com/\">\n                        <img src=\"../_images/logo2.png\" alt=\"Mobirise\">\n                    </a>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Address\n                </h5>\n                <p class=\"mbr-text\">மதவெறி மாய்ப்போம்!\n<br>சாதியை தகர்ப்போம் !\n<br>மக்கள் ஒற்றுமை காப்போம்!\n<br>தேசத்தை முன்னேற்றுவோம்</p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\">\n                    Contacts\n                </h5>\n                <p class=\"mbr-text\">\n                    Email: <br>Phone:&nbsp;<br><br></p>\n            </div>\n            <div class=\"col-12 col-md-3 mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                <h5 class=\"pb-3\"></h5>\n                <p class=\"mbr-text\"></p>\n            </div>\n        </div>\n        <div class=\"footer-lower\" mbr-if=\"showCopyright\">\n            <div class=\"media-container-row\">\n                <div class=\"col-sm-12\">\n                    <hr>\n                </div>\n            </div>\n            <div class=\"media-container-row mbr-white\">\n                <div class=\"col-sm-6 copyright\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright > p\"></p>\n                </div>\n                <div class=\"col-md-6\">\n                    <div class=\"social-list align-right\" mbr-if=\"iconsCount > 0\">\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>0\">\n                            <a href=\"https://www.facebook.com/MakkalOtrumai/\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\" style=\"font-size: 27px; color: rgb(193, 193, 193);\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>1\">\n                            <a href=\"https://www.facebook.com/MakkalOtrumai/\" target=\"_blank\">\n                                <span mbr-icon class=\"mbr-iconfont mbr-iconfont-social socicon-facebook socicon\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>2\">\n                            <a href=\"https://www.youtube.com/c/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>3\">\n                            <a href=\"https://instagram.com/mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>4\">\n                            <a href=\"https://plus.google.com/u/0/+Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-googleplus socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                        <div class=\"soc-item\" mbr-if=\"iconsCount>5\">\n                            <a href=\"https://www.behance.net/Mobirise\" target=\"_blank\">\n                                <span mbr-icon class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                            </a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qZbzS8LOFw",
+          "_anchor": "footer1-4",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
